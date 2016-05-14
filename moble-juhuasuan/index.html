@@ -2,10 +2,115 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,userscalable=no"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
 	<title>Document</title>
+	<style type="text/css">
+		*{margin:0;padding:0;list-style: none;text-decoration: none;}
+		html{font-size:20px;}
+		.head{height:2.5rem;background:#ccc;text-align: center;line-height: 2.5rem;position: relative;}
+		.head a{height:1.45rem;width:3.05rem;position:absolute;left:0; }
+		.head .back{width:3.05rem;height:1.45rem;vertical-align: middle;}
+		.head .logo{width:3.7rem;height:0.975rem;}
+		.banner {width:100%;}
+		.banner_box {overflow: hidden;width:500%;}
+		.banner img{width:16rem; height:6.675rem;}
+		.banner_box li{float:left;}
+		.banner_point{clear:both;margin-top:0.5rem }
+		.banner_point ul{display: -webkit-box;-webkit-box-pack:center;}
+		.banner_point li{width:0.25rem;height:0.25rem;background: #a9a9a9;border-radius: 50%;margin-right:0.25rem }
+		.classify{width:100%;overflow: hidden;}
+		.classify ul li{float:left;width:25%;text-align: center;margin-top: 1rem;}
+		.classify ul li img{display: block;width:2rem;height:2rem;margin:0 auto;}
+		.classify ul li span{display: block;padding-top: 0.5rem;font-size: 0.6rem;font-family: "[FZLTHJW]";color:#999;}
+		.hot_sell{width:15rem;height:1.25rem;border-bottom:0.1rem solid #dcdcdc;margin: 1.5rem 0 0 0.5rem;font-size: 0.7rem;}
+		.hot_sell p{border-left:0.1rem solid #d51938;padding-left: 0.1rem }
+		.hot_sell span{float:right;}
+
+	</style>
+	<script type="text/javascript">
+		window.onload=window.onresize=function(){
+			document.documentElement.style.fontSize=document.documentElement.clientWidth/320*20+'px';
+			
+		}
+	</script>
 </head>
 <body>
-	
+	<div class="head">
+		<a href="javascript:;"><img src="img/back.png" alt="" class="back"></a>
+		<img src="img/logo.png" alt="" class="logo">
+	</div>
+	<div class="banner">
+		<ul  class="banner_box">
+			<li><img src="img/banner.png" alt=""></li>
+			<li><img src="img/banner.png" alt=""></li>
+			<li><img src="img/banner.png" alt=""></li>
+			<li><img src="img/banner.png" alt=""></li>
+			<li><img src="img/banner.png" alt=""></li>
+		</ul>
+		<div class="banner_point">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>	
+		</div>
+		
+	</div>
+	<div class="classify">
+		<ul>
+			<li>
+				<img src="img/goods.png" alt="">
+				<span>商品</span>
+			</li>
+			<li>
+				<img src="img/life.png" alt="">
+				<span>生活</span>
+			</li>
+			<li>
+				<img src="img/brand.png" alt="">
+				<span>品牌</span>
+			</li>
+			<li>
+				<img src="img/bowl.png" alt="">
+				<span>聚宝盆</span>
+			</li>
+			<li>
+				<img src="img/luxury.png" alt="">
+				<span>聚名品</span>
+			</li>
+			<li>
+				<img src="img/decoration.png" alt="">
+				<span>聚家装</span>
+			</li>
+			<li>
+				<img src="img/7.png" alt="">
+				<span>聚透</span>
+			</li>
+			<li>
+				<img src="img/client.png" alt="">
+				<span>客户端</span>
+			</li>
+		</ul>
+	</div>
+	<div class="hot_sell">
+		<span>TOP10</span>
+		<p>聚划算热卖排行</p>
+	</div>
+	<div class="goods_rank">
+		<li>
+			<span></span>
+			<img src="img/.png" alt="">
+			<div>
+				<p></p>
+				<p></p>
+				<span></span>
+				<a href="javascript:;">
+					<img src="img/right_symbol" alt="">
+				</a>
+			</div>
+		</li>
+	</div>
 </body>
 </html>
