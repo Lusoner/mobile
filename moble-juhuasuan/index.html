@@ -7,6 +7,7 @@
 	<style type="text/css">
 		*{margin:0;padding:0;list-style: none;text-decoration: none;}
 		html{font-size:20px;}
+		.section{width:15rem;margin:0 auto;}
 		.head{height:2.5rem;background:#ccc;text-align: center;line-height: 2.5rem;position: relative;}/*渐变*/
 		.head a{height:1.45rem;width:3.05rem;position:absolute;left:0; }
 		.head .back{width:3.05rem;height:1.45rem;vertical-align: middle;}
@@ -26,12 +27,28 @@
 		.hot_sell p{border-left:0.1rem solid #d51938;padding-left: 0.1rem }
 		.hot_sell span{float:right;}
 		.goods_rank{width:15rem;margin:0.75rem auto 0;}
-		.goods_rank>li{}
-		.goods_rank li>img{width:4.5rem;height:3rem;float:left;}
-		.goods_rank li>div{float: left;width:9rem;height:3rem;background: #f4f4f4;font-size:0.6rem;text-align: center;line-height: 3rem; }
-		.goods_rank div>span{float:right;}
-		.goods_rank div div{float:left;width: 4.5rem;}
-		.rank_1th>span{float:left;height:3rem;width:1.5rem;color:#fff;display: inline-block;background: #e00202;text-align: center;;line-height: 3rem;}
+		.goods_rank li{display: -webkit-box;}
+		.goods_rank li>img{width:4.5rem;height:3rem;}
+		.ranks{width:1.5rem;display: block;height: 3rem;line-height: 3rem;font-size: 1.2rem;color:#fff;text-align: center}
+		.ranks_detail{-webkit-box-flex:1;background: #f4f4f4;display: -webkit-box;}
+		.selling{font-size:0.6rem;line-height: 0.85rem;padding:0.625rem 0 0 0.5rem; color:#9f9f9f;-webkit-box-flex:2;}
+		.selling span{text-decoration: line-through;}
+		.selling_price{-webkit-box-flex:1;line-height: 3rem}
+		.selling_price span{font-size: 0.8rem;color:#d51938;font-weight: bold;}
+		.selling_price img{width:0.325rem;height:0.55rem;}
+		.ranks_1{background: #e00202}
+		.ranks_2{background: #ff4800}
+		.ranks_3{background: #ff7300}
+		.ranks_4{background: #ff9d00}
+		.ranks_5{background: #ffa800}
+		.ranks_6{background: #ffb400}
+		.ranks_7{background: #ffba00}
+		.ranks_8{background: #fcd000}
+		.ranks_9{background: #ffd719}
+		.ranks_10{background: #ffe152}
+		.cheap_more{background: #f5f5f5;height:2rem;line-height: 2rem;text-align: center}
+		
+		
 
 	</style>
 	<script type="text/javascript">
@@ -65,7 +82,7 @@
 		</div>
 		
 	</div>
-	<div class="classify">
+	<div class="classify section">
 		<ul>
 			<li>
 				<img src="img/goods.png" alt="">
@@ -101,28 +118,204 @@
 			</li>
 		</ul>
 	</div>
-	<div class="hot_sell">
+	<div class="hot_sell section">
 		<span>TOP10</span>
 		<p>聚划算热卖排行</p>
 	</div>
-	<div class="goods_rank">
+	<div class="goods_rank section">
 		<li class="rank_1th">
-			<span>1</span>
+			<span class="ranks ranks_1">1</span>
 			<img src="img/skirt.png" alt="">
-			<div>
-				<div>
+			<div class="ranks_detail">
+				<div class="selling">
 					<p>已售68423</p>
 					<p>
 						2.3折 ￥<span>299</span>
 					</p>	
 				</div>
-				
-				<a href="javascript:;">
-					<img src="img/right_symbol.png" alt="">
-				</a>
-				<span>￥51</span>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
 			</div>
 		</li>
+		<li class="rank_2th">
+			<span class="ranks ranks_2">2</span>
+			<img src="img/tenda.png" alt="">
+			<div class="ranks_detail">
+				<div class="selling">
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
+			</div>
+		</li>
+		<li class="rank_3th">
+			<span class="ranks ranks_3">3</span>
+			<img src="img/adidas.png" alt="">
+			<div class="ranks_detail">
+				<div class="selling">
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
+			</div>
+		</li>
+		<li class="rank_4th">
+			<span class="ranks ranks_4">4</span>
+			<img src="img/merrto.png" alt="">
+			<div class="ranks_detail">
+				<div class="selling">
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
+			</div>
+		</li>
+		<li class="rank_5th">
+			<span class="ranks ranks_5">5</span>
+			<img src="img/playboy.png" alt="">
+			<div class="ranks_detail">
+				<div class="selling">
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
+			</div>
+		</li>
+		<li class="rank_6th">
+			<span class="ranks ranks_6">6</span>
+			<img src="img/yingtao.png" alt="">
+			<div class="ranks_detail">
+				<div class="selling">
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
+			</div>
+		</li>
+		<li class="rank_7th">
+			<span class="ranks ranks_7">7</span>
+			<img src="img/fotile.png" alt="">
+			<div class="ranks_detail">
+				<div class="selling">
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
+			</div>
+		</li>
+		<li class="rank_8th">
+			<span class="ranks ranks_8">8</span>
+			<img src="img/difenni.png" alt="">
+			<div class="ranks_detail">
+				<div class="selling">
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
+			</div>
+		</li>
+		<li class="rank_9th">
+			<span class="ranks ranks_9">9</span>
+			<img src="img/skirt.png" alt="">
+			<div class="ranks_detail">
+				<div class="selling">
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
+			</div>
+		</li>
+		<li class="rank_10th">
+			<span class="ranks ranks_10">10</span>
+			<img src="img/falingwen.png" alt="">
+			<div class="ranks_detail">
+				<div class="selling">
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				<div class="selling_price">
+					<span>￥51</span>
+					<a href="javascript:;">
+						<img src="img/right_symbol.png" alt="">
+					</a>	
+				</div>
+
+			</div>
+		</li>
+	</div>
+	<div class="section cheap_more">
+		<p>更多划算 逛起来！</p>
 	</div>
 </body>
 </html>
