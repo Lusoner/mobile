@@ -7,7 +7,7 @@
 	<style type="text/css">
 		*{margin:0;padding:0;list-style: none;text-decoration: none;}
 		html{font-size:20px;}
-		.head{height:2.5rem;background:#ccc;text-align: center;line-height: 2.5rem;position: relative;}
+		.head{height:2.5rem;background:#ccc;text-align: center;line-height: 2.5rem;position: relative;}/*渐变*/
 		.head a{height:1.45rem;width:3.05rem;position:absolute;left:0; }
 		.head .back{width:3.05rem;height:1.45rem;vertical-align: middle;}
 		.head .logo{width:3.7rem;height:0.975rem;}
@@ -18,13 +18,20 @@
 		.banner_point{clear:both;margin-top:0.5rem }
 		.banner_point ul{display: -webkit-box;-webkit-box-pack:center;}
 		.banner_point li{width:0.25rem;height:0.25rem;background: #a9a9a9;border-radius: 50%;margin-right:0.25rem }
-		.classify{width:100%;overflow: hidden;}
+		.classify{width:15rem;overflow: hidden;margin:0 auto;}
 		.classify ul li{float:left;width:25%;text-align: center;margin-top: 1rem;}
 		.classify ul li img{display: block;width:2rem;height:2rem;margin:0 auto;}
 		.classify ul li span{display: block;padding-top: 0.5rem;font-size: 0.6rem;font-family: "[FZLTHJW]";color:#999;}
-		.hot_sell{width:15rem;height:1.25rem;border-bottom:0.1rem solid #dcdcdc;margin: 1.5rem 0 0 0.5rem;font-size: 0.7rem;}
+		.hot_sell{width:15rem;height:1.25rem;border-bottom:0.1rem solid #dcdcdc;margin: 1.5rem auto 0;font-size: 0.7rem;}
 		.hot_sell p{border-left:0.1rem solid #d51938;padding-left: 0.1rem }
 		.hot_sell span{float:right;}
+		.goods_rank{width:15rem;margin:0.75rem auto 0;}
+		.goods_rank>li{}
+		.goods_rank li>img{width:4.5rem;height:3rem;float:left;}
+		.goods_rank li>div{float: left;width:9rem;height:3rem;background: #f4f4f4;font-size:0.6rem;text-align: center;line-height: 3rem; }
+		.goods_rank div>span{float:right;}
+		.goods_rank div div{float:left;width: 4.5rem;}
+		.rank_1th>span{float:left;height:3rem;width:1.5rem;color:#fff;display: inline-block;background: #e00202;text-align: center;;line-height: 3rem;}
 
 	</style>
 	<script type="text/javascript">
@@ -99,16 +106,21 @@
 		<p>聚划算热卖排行</p>
 	</div>
 	<div class="goods_rank">
-		<li>
-			<span></span>
-			<img src="img/.png" alt="">
+		<li class="rank_1th">
+			<span>1</span>
+			<img src="img/skirt.png" alt="">
 			<div>
-				<p></p>
-				<p></p>
-				<span></span>
+				<div>
+					<p>已售68423</p>
+					<p>
+						2.3折 ￥<span>299</span>
+					</p>	
+				</div>
+				
 				<a href="javascript:;">
-					<img src="img/right_symbol" alt="">
+					<img src="img/right_symbol.png" alt="">
 				</a>
+				<span>￥51</span>
 			</div>
 		</li>
 	</div>
