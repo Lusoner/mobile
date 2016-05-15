@@ -7,9 +7,11 @@
 	<style type="text/css">
 		*{margin:0;padding:0;list-style: none;text-decoration: none;}
 		html{font-size:20px;}
+		body{height:100%;}
 		.section{width:15rem;margin:0 auto;}
 		.hot_tag{color:#d51942;}
-		.head{height:2.5rem;background:#ccc;text-align: center;line-height: 2.5rem;position: relative;}/*渐变*/
+		.floatR{float: right}
+		.head{height:2.5rem;background:linear-gradient(#fff,#ededed);text-align: center;line-height: 2.5rem;position: relative;}/*渐变*/
 		.head a{height:1.45rem;width:3.05rem;position:absolute;left:0; }
 		.head .back{width:3.05rem;height:1.45rem;vertical-align: middle;}
 		.head .logo{width:3.7rem;height:0.975rem;}
@@ -50,12 +52,22 @@
 		.interpretation{background: #f5f5f5;height:2rem;line-height: 2rem;text-align: center;font-size:0.7rem;font-weight: bolder;color:#666;margin-top: 0.5rem; }
 		.groups{display: -webkit-box;margin-top: 0.5rem}
 		.groups img{width:3.725rem;height: 8.8rem}
-		.groups ul{width:11.25rem;display: -webkit-flex;flex-wrap: wrap}
-		.groups ul li{width:3.6575rem;height:2.1325rem;line-height: 2.125rem;text-align: center;font-size:0.7rem;color:#999; border:0.08rem solid #eee;}
-		/*宽：原配0.0125rem  最小0.08rem  适配多出0.0675rem  3.725-0.0675=3.6575*/
-		/*高：原配0.0125rem  最小0.08rem  适配多出0.0675rem  2.2-0.0675=2.1325*/	
+		.groups ul{width:11.25rem;height: 8.8rem;display: -webkit-flex;flex-wrap: wrap}
+		.groups ul li{width:3.59rem;height:2.08rem;line-height: 2.065rem;text-align: center;font-size:0.7rem;color:#999; border:0.08rem solid #eee;}
+		/*宽：原配0.0125rem  最小0.08rem  适配多出0.0675rem  3.725-0.0675*2=3.59*/
+		/*高：原配0.0125rem  最小0.08rem  适配多出0.0675rem  2.2-0.0675*2=2.065*/	
 		.groups ul li.hot_tag{color:#d51942;}
-		
+		.client{display: -webkit-box;margin-top: 0.8rem}
+		.client li{height:3.95rem;text-align: center;-webkit-box-flex:1;font-size:0.6rem;color:#999;border:0.08rem solid #eee;}
+		.client li a{height:2.75rem;display: block;line-height: 2.75rem;}
+		.client p{padding:;}
+		.client img{vertical-align: middle;}
+		.user_bar{background: #f8f8f8;height:2.25rem;line-height: 2.25rem;font-size:0.7rem;font-weight: bolder;margin-top:0.75rem  }
+		.footer{background: #eee;text-align: center;font-size:0.7rem;padding: 1rem 0 0.7rem 0;font-weight: bold; }
+		.footer p{font-size:0.55rem ;color:#999;margin:0.75rem 0 0.625rem 0; }
+		.back_top{margin-right: 0.125rem}
+		.back_top span{}
+		.back_top img{height:0.225rem;width:0.425rem;padding:0 0.5rem 0 0.5rem;margin-left: -0.2rem}
 
 	</style>
 	<script type="text/javascript">
@@ -384,14 +396,41 @@
 	<div class="section interpretation">
 		<p>品牌折扣 逛起来！</p>
 	</div>
-	<div>
-		<ul>
+	<div class="section">
+		<ul class="client">
 			<li>
-				<img src="" alt="">
+				<a href="">
+					<img src="img/apple_logo.png" alt="">
+				</a>
+				<p>iOS客户端</p>
 			</li>
-			<li></li>
-			<li></li>
+			<li>
+				<a href="">
+					<img src="img/android_logo.png" alt="">
+				</a>
+				<p>安卓客户端</p>
+			</li>
+			<li>
+				<a href="">
+					<img src="img/feedback_logo.png" alt="">
+				</a>
+				<p>意见反馈</p>
+			</li>
 		</ul>
+	</div>
+	<div class="user_bar">
+		<span>登录</span>
+		<span>注册</span>
+		<div class="floatR back_top">
+			<span>TOP</span>
+			<img src="img/up_triangle.png" alt="">	
+		</div>
+		
+	</div>
+	<div class="footer">
+		<span>标准版</span>
+		<span>电脑版</span>
+		<p>©2013浙B2-20080224 服务中心</p>
 	</div>
 </body>
 </html>
